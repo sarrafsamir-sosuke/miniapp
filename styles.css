@@ -281,10 +281,9 @@ body.dark .msg-author { color: #65bfff; }
   aspect-ratio: 1 / 1.18;
   min-width: 0;
   overflow: hidden;
-  border: 0;
   border-radius: 2px;
-  padding: 0;
   background: #0b121a;
+  cursor: default;
 }
 
 .album-tile img {

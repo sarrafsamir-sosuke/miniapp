@@ -309,12 +309,9 @@ function createAdminAlbum() {
   grid.className = "album-grid";
 
   CONFIG.adminAlbum.images.forEach((src) => {
-    const tile = document.createElement("button");
+    const tile = document.createElement("div");
     tile.className = "album-tile";
-    tile.type = "button";
-    tile.setAttribute("aria-label", "Abrir mídia");
     tile.appendChild(createImage(src, "./assets/placeholder-blur.svg", "mídia"));
-    tile.addEventListener("click", () => openImage(src, "./assets/placeholder-blur.svg"));
     grid.appendChild(tile);
   });
 
