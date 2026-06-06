@@ -92,7 +92,6 @@ const CONFIG = {
     { author: "Pedro L.", text: "isso aqui tá muito bom kkkkk", reactions: ["😂 5"] },
     { author: "Rogério L.", text: "tem muita coisa completa aqui?", reactions: ["👀 1"] },
     { author: "Maikon D.", text: "ADM posta mais uma mídia aí", reactions: ["👀 4"] },
-    { author: "Bruno S.", text: "só essa tela já passa confiança demais", reactions: ["✅ 2"] },
     { author: "Carlos R.", text: "entrei ontem e valeu muito", reactions: ["🔥 2"] }
   ],
 
