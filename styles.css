@@ -195,6 +195,19 @@ body.dark .chat {
   transition: background .2s ease, color .2s ease;
 }
 
+.message.admin-message {
+  max-width: 90%;
+  background: #e8f5ff;
+  border-left: 3px solid #168de2;
+  box-shadow: 0 2px 8px rgba(22, 141, 226, .16);
+}
+
+body.dark .message.admin-message {
+  background: #1b3145;
+  border-left-color: #65bfff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .22);
+}
+
 .first-message { padding: 8px; }
 
 .msg-author {
@@ -231,6 +244,72 @@ body.dark .msg-author { color: #65bfff; }
   color: var(--reaction-text);
   font-size: 11px;
   font-weight: 800;
+}
+
+.album-message {
+  width: min(342px, calc(100vw - 46px));
+  padding: 8px;
+}
+
+.album-card {
+  width: 100%;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #132536;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+}
+
+.album-title {
+  padding: 7px 9px 5px;
+  color: #d7a15e;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .2px;
+  line-height: 1;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  padding: 0 3px;
+}
+
+.album-tile {
+  display: block;
+  aspect-ratio: 1 / 1.18;
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 2px;
+  padding: 0;
+  background: #0b121a;
+}
+
+.album-tile img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: blur(4px);
+  transform: scale(1.025);
+}
+
+.album-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 9px 7px;
+  color: rgba(255,255,255,.88);
+  font-size: 11px;
+  line-height: 1.1;
+}
+
+.album-footer span:last-child {
+  color: rgba(255,255,255,.58);
+  white-space: nowrap;
 }
 
 .media-list { display: grid; gap: 8px; }

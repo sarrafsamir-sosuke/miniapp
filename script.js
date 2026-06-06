@@ -25,6 +25,25 @@ const CONFIG = {
     reactions: ["🔥 12", "👀 6"]
   },
 
+  adminAlbum: {
+    enabled: true,
+    delayMs: 1700,
+    author: "ADM 👑",
+    text: "Mais 6 mídias enviadas agora.",
+    title: "ONLYPRIME VIP",
+    footer: "Atualização",
+    views: "392",
+    reactions: ["🔥 18", "👀 9"],
+    images: [
+      "./assets/photo_4981285353620704201_y.jpg",
+      "./assets/photo_4981285353620704202_y.jpg",
+      "./assets/photo_4981285353620704203_y.jpg",
+      "./assets/photo_4981285353620704204_y.jpg",
+      "./assets/photo_4981285353620704205_x.jpg",
+      "./assets/photo_4981285353620704206_y.jpg"
+    ]
+  },
+
   medias: [
     {
       type: "visible-photo",
@@ -109,6 +128,7 @@ const themeToggle = document.getElementById("themeToggle");
 
 let messageIndex = 0;
 let updateWasShown = false;
+let albumWasShown = false;
 let shouldStickToBottom = true;
 let touchStartY = 0;
 let onlineNumber = parseInt(String(CONFIG.online).replace(/\D/g, ""), 10) || 2014;
@@ -249,7 +269,11 @@ function createPlayableVideo(media) {
 
 function createMessage(item, extraClass = "") {
   const article = document.createElement("article");
-  article.className = `message ${extraClass}`.trim();
+  article.className = [
+    "message",
+    isAdminAuthor(item.author) ? "admin-message" : "",
+    extraClass
+  ].filter(Boolean).join(" ");
 
   const reactions = (item.reactions || [])
     .map(reaction => `<span>${reaction}</span>`)
@@ -264,6 +288,66 @@ function createMessage(item, extraClass = "") {
 
   messagesEl.appendChild(article);
   maybeScrollToBottom();
+}
+
+function createAdminAlbum() {
+  if (!CONFIG.adminAlbum?.enabled || albumWasShown) return;
+  albumWasShown = true;
+
+  const article = document.createElement("article");
+  article.className = "message admin-message album-message";
+
+  const album = document.createElement("div");
+  album.className = "album-card";
+
+  const title = document.createElement("div");
+  title.className = "album-title";
+  title.textContent = CONFIG.adminAlbum.title;
+  album.appendChild(title);
+
+  const grid = document.createElement("div");
+  grid.className = "album-grid";
+
+  CONFIG.adminAlbum.images.forEach((src) => {
+    const tile = document.createElement("button");
+    tile.className = "album-tile";
+    tile.type = "button";
+    tile.setAttribute("aria-label", "Abrir mídia");
+    tile.appendChild(createImage(src, "./assets/placeholder-blur.svg", "mídia"));
+    tile.addEventListener("click", () => openImage(src, "./assets/placeholder-blur.svg"));
+    grid.appendChild(tile);
+  });
+
+  album.appendChild(grid);
+
+  const footer = document.createElement("div");
+  footer.className = "album-footer";
+  footer.innerHTML = `
+    <span>${CONFIG.adminAlbum.footer}</span>
+    <span>👁 ${CONFIG.adminAlbum.views} ${nowTime()}</span>
+  `;
+  album.appendChild(footer);
+
+  const reactions = (CONFIG.adminAlbum.reactions || [])
+    .map(reaction => `<span>${reaction}</span>`)
+    .join("");
+
+  article.innerHTML = `
+    <span class="msg-author">${CONFIG.adminAlbum.author}</span>
+    <div class="msg-text">${CONFIG.adminAlbum.text}</div>
+  `;
+  article.appendChild(album);
+  if (reactions) article.insertAdjacentHTML("beforeend", `<div class="msg-reactions">${reactions}</div>`);
+  article.insertAdjacentHTML("beforeend", `<div class="msg-meta">${nowTime()}</div>`);
+
+  messagesEl.appendChild(article);
+  updateOnlineCounter();
+  maybeScrollToBottom();
+}
+
+function scheduleFinalAdminAlbum() {
+  if (!CONFIG.adminAlbum?.enabled || albumWasShown) return;
+  setTimeout(createAdminAlbum, CONFIG.adminAlbum.delayMs);
 }
 
 function scheduleAdminUpdate() {
@@ -286,6 +370,7 @@ function scheduleAdminUpdate() {
 function loopMessages() {
   if (messageIndex >= CONFIG.messages.length) {
     hideTyping();
+    scheduleFinalAdminAlbum();
     return;
   }
 
@@ -363,6 +448,10 @@ function nowTime() {
 
 function randomItem(list) {
   return list[Math.floor(Math.random() * list.length)];
+}
+
+function isAdminAuthor(author) {
+  return String(author || "").toUpperCase().includes("ADM");
 }
 
 function isNearBottom() {
