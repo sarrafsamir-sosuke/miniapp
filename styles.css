@@ -342,6 +342,11 @@ body.dark .msg-author { color: #65bfff; }
   object-fit: contain;
 }
 
+.media-card.download-video video {
+  object-fit: contain;
+  background: #05070a;
+}
+
 /* Midia borrada */
 .media-card.blurred img,
 .media-card.blurred video {

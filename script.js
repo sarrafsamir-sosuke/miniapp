@@ -66,7 +66,7 @@ const CONFIG = {
     {
       type: "download-video",
       src: "./assets/video-10s.mp4",
-      poster: "./assets/placeholder-blur.svg",
+      poster: "",
       fallbackPoster: "./assets/placeholder-blur.svg",
       label: "VÍDEO",
       size: "5.6 MB",
@@ -181,7 +181,7 @@ function renderMedias() {
     if (media.type === "playable-video") {
       card.appendChild(createPlayableVideo(media));
     } else if (media.type === "download-video") {
-      card.appendChild(createImage(media.poster, media.fallbackPoster, media.label || "mídia"));
+      card.appendChild(createVideoPreview(media));
     } else {
       card.appendChild(createImage(media.src, media.fallbackSrc, media.label || "mídia"));
     }
@@ -213,7 +213,7 @@ function renderMedias() {
 
     if (media.type === "download-video") {
       card.addEventListener("click", (event) => {
-        if (event.target === card || event.target.tagName === "IMG") openVideo(media.src, media.poster || media.fallbackPoster);
+        if (event.target === card || event.target.tagName === "VIDEO") openVideo(media.src, media.poster || "");
       });
     }
 
@@ -244,6 +244,34 @@ function createImage(src, fallbackSrc, alt) {
   }
 
   return image;
+}
+
+function createVideoPreview(media) {
+  const video = document.createElement("video");
+  video.muted = true;
+  video.playsInline = true;
+  video.preload = "metadata";
+  video.poster = media.poster || "";
+  video.setAttribute("aria-label", media.label || "mídia");
+
+  video.addEventListener("loadedmetadata", () => {
+    if (Number.isFinite(video.duration) && video.duration > 0) {
+      video.currentTime = Math.min(0.2, video.duration / 2);
+    }
+  });
+
+  video.addEventListener("error", () => {
+    if (!media.fallbackPoster) return;
+    const image = createImage(media.fallbackPoster, "", media.label || "mídia");
+    video.replaceWith(image);
+  });
+
+  const source = document.createElement("source");
+  source.src = media.src;
+  source.type = "video/mp4";
+  video.appendChild(source);
+
+  return video;
 }
 
 function createPlayableVideo(media) {
