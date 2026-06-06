@@ -7,7 +7,7 @@ const CONFIG = {
   miniAppTitle: "𝗢𝗡𝗟𝗬𝗣𝗥𝗜𝗠𝗘 𝗩𝗜𝗣 🔥",
   groupName: "𝗢𝗡𝗟𝗬𝗣𝗥𝗜𝗠𝗘 𝗩𝗜𝗣 🔥",
   adminName: "ADM 👑",
-  avatarUrl: "./assets/avatar.svg",
+  avatarUrl: "./assets/photo_4981285353620704197_y.jpg",
 
   members: "67.483",
   online: "2.014",
