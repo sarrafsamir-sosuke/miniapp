@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>ONLY PRIME</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="miniapp-top">
+      <button type="button" class="mini-close">Fechar</button>
+      <div class="mini-title" id="miniTitle">ONLY PRIME</div>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar tema">☾</button>
+    </header>
+
+    <header class="group-top">
+      <button type="button" class="back-btn" aria-label="Voltar">‹</button>
+      <img id="groupAvatar" class="group-avatar" alt="Avatar do grupo" />
+      <div class="group-info">
+        <strong id="groupName">ONLY PRIME</strong>
+        <span><span id="memberCount">67.483</span> membros, <span id="onlineCount">2.014</span> online</span>
+      </div>
+      <button type="button" class="search-btn" aria-label="Pesquisar">⌕</button>
+      <button type="button" class="group-menu" aria-label="Menu">⋮</button>
+    </header>
+
+    <section class="chat" id="chat">
+      <div class="date-pill">Hoje</div>
+
+      <article class="message first-message">
+        <span class="msg-author" id="adminName">ADM 👑</span>
+        <div id="mediaList" class="media-list"></div>
+        <div class="msg-text caption" id="postCaption"></div>
+        <div class="msg-reactions" id="postReactions"></div>
+        <div class="msg-meta" id="postTime">12:48</div>
+      </article>
+
+      <section id="messages" class="messages" aria-live="polite"></section>
+
+      <div id="typingLine" class="typing-line hidden">
+        <span id="typingName">Maikon D.</span> está digitando...
+      </div>
+    </section>
+
+    <footer class="locked-footer">
+      <span>Você não tem permissão para postar neste grupo.</span>
+    </footer>
+
+    <div id="imageModal" class="modal hidden">
+      <button id="closeModal" class="modal-close" type="button" aria-label="Fechar mídia">×</button>
+      <img id="modalImage" alt="Mídia ampliada" />
+      <video id="modalVideo" class="hidden" controls playsinline preload="metadata"></video>
+    </div>
+
+    <div id="toast" class="toast hidden">Mídia indisponível.</div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
