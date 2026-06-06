@@ -4,8 +4,8 @@
 */
 
 const CONFIG = {
-  miniAppTitle: "ONLY PRIME",
-  groupName: "ONLY PRIME",
+  miniAppTitle: "𝗢𝗡𝗟𝗬𝗣𝗥𝗜𝗠𝗘 𝗩𝗜𝗣 🔥",
+  groupName: "𝗢𝗡𝗟𝗬𝗣𝗥𝗜𝗠𝗘 𝗩𝗜𝗣 🔥",
   adminName: "ADM 👑",
   avatarUrl: "./assets/avatar.svg",
 
@@ -50,7 +50,7 @@ const CONFIG = {
       poster: "./assets/placeholder-blur.svg",
       fallbackPoster: "./assets/placeholder-blur.svg",
       label: "VÍDEO",
-      size: "10.2 MB",
+      size: "5.6 MB",
       time: "0:10",
       download: "./assets/video-10s.mp4"
     },

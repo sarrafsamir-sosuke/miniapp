@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#111827"/><stop offset="45%" stop-color="#168de2"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs>
-<rect width="512" height="512" rx="256" fill="url(#g)"/><text x="256" y="287" text-anchor="middle" font-family="Arial" font-size="82" fill="white" font-weight="900">OP</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="OnlyPrime">
+  <rect width="512" height="512" fill="#000"/>
+  <circle cx="256" cy="164" r="86" fill="none" stroke="#fff" stroke-width="16"/>
+  <path fill="#ff1d1d" d="M318 160h-16v-38c0-38-30-68-68-68s-68 30-68 68v38h-16c-17 0-31 14-31 31v72c0 17 14 31 31 31h168c17 0 31-14 31-31v-72c0-17-14-31-31-31Zm-111-38c0-16 12-28 27-28s27 12 27 28v38h-54v-38Zm44 116v28h-34v-28c-10-6-16-17-16-29 0-19 15-34 33-34s33 15 33 34c0 12-6 23-16 29Z"/>
+  <path fill="#ff1d1d" d="M64 328c0-42 34-76 76-76h64v64h-64c-7 0-12 5-12 12s5 12 12 12h64v64h-64c-42 0-76-34-76-76Z"/>
+  <text x="256" y="385" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="68" font-weight="900" fill="#ff1d1d">OnlyPrime</text>
 </svg>
