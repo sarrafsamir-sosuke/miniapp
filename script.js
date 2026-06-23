@@ -32,36 +32,17 @@ const CONFIG = {
       afterMessageIndex: 1,
       gapMs: 1700,
       author: "ADM 👑",
-      text: "Mais 6 mídias enviadas agora.",
-      title: "ONLYPRIME VIP",
+      text: "Mais conteúdo da Bruna Vieira 🔥",
+      title: "BRUNA VIEIRA",
       footer: "Atualização +60 mídias",
       views: "392",
       reactions: ["🔥 18", "👀 9"],
+      moreCount: 56,
       items: [
-        { type: "photo", src: "./assets/novas mídias/5031048902001495236.jpg" },
-        { type: "video", src: "./assets/novas mídias/IMG_2629.MP4" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495237.jpg" },
-        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_36.mp4" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495238.jpg" },
-        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_37.mp4" }
-      ]
-    },
-    {
-      enabled: true,
-      afterMessageIndex: 2,
-      gapMs: 1500,
-      author: "ADM 👑",
-      text: "Acabou de cair mais conteúdo 🔥",
-      title: "ONLYPRIME VIP",
-      footer: "Atualização +45 mídias",
-      views: "301",
-      reactions: ["🔥 14", "👀 7"],
-      items: [
-        { type: "photo", src: "./assets/novas mídias/5031048902001495239.jpg" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495240.jpg" },
-        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_46.mp4" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495241.jpg" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495243.jpg" }
+        { type: "video", src: "./assets/novas-midias/bruna-vieira/privacy-brunavip-36.mp4", locked: true },
+        { type: "video", src: "./assets/novas-midias/bruna-vieira/privacy-brunavip-55.mp4", locked: true },
+        { type: "video", src: "./assets/novas-midias/bruna-vieira/privacy-brunavip-59.mp4", locked: true },
+        { type: "video", src: "./assets/novas-midias/bruna-vieira/privacy-brunavip-55.mp4", locked: true }
       ]
     },
     {
@@ -69,18 +50,17 @@ const CONFIG = {
       afterMessageIndex: 2,
       gapMs: 1800,
       author: "ADM 👑",
-      text: "Mais mídias liberadas no grupo.",
-      title: "ONLYPRIME VIP",
-      footer: "Atualização +52 mídias",
-      views: "275",
-      reactions: ["🔥 16", "👀 8"],
+      text: "Mais mídias da Kerolay Chaves 🔥",
+      title: "KEROLAY CHAVES",
+      footer: "Atualização +45 mídias",
+      views: "301",
+      reactions: ["🔥 14", "👀 7"],
+      moreCount: 41,
       items: [
-        { type: "photo", src: "./assets/novas mídias/5031048902001495244.jpg" },
-        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_53.mp4" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495245.jpg" },
-        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_55.mp4" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495246.jpg" },
-        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_59.mp4" }
+        { type: "photo", src: "./assets/novas-midias/kerolay-chaves/5031048902001495243.jpg", locked: false },
+        { type: "photo", src: "./assets/novas-midias/kerolay-chaves/5031048902001495244.jpg", locked: true },
+        { type: "photo", src: "./assets/novas-midias/kerolay-chaves/5031048902001495245.jpg", locked: false },
+        { type: "photo", src: "./assets/novas-midias/kerolay-chaves/5031048902001495246.jpg", locked: true }
       ]
     },
     {
@@ -88,49 +68,17 @@ const CONFIG = {
       afterMessageIndex: 2,
       gapMs: 2000,
       author: "ADM 👑",
-      text: "Chegou mais um pacote agora.",
-      title: "ONLYPRIME VIP",
-      footer: "Atualização +38 mídias",
-      views: "248",
-      reactions: ["🔥 11", "👀 5"],
+      text: "Fechando o dia com Martina Oliveira 🔥",
+      title: "MARTINA OLIVEIRA",
+      footer: "Atualização +52 mídias",
+      views: "275",
+      reactions: ["🔥 16", "👀 8"],
+      moreCount: 48,
       items: [
-        { type: "photo", src: "./assets/novas mídias/5031048902001495247.jpg" },
-        { type: "video", src: "./assets/novas mídias/video_2025-09-09_23-49-32 (3).mp4" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495248.jpg" },
-        { type: "video", src: "./assets/novas mídias/video_2025-09-09_23-49-32 (4).mp4" }
-      ]
-    },
-    {
-      enabled: true,
-      afterMessageIndex: 2,
-      gapMs: 1600,
-      author: "ADM 👑",
-      text: "Mais um envio do ADM 👑",
-      title: "ONLYPRIME VIP",
-      footer: "Atualização +41 mídias",
-      views: "219",
-      reactions: ["🔥 13", "👀 6"],
-      items: [
-        { type: "photo", src: "./assets/novas mídias/5031048902001495249.jpg" },
-        { type: "video", src: "./assets/novas mídias/video_2025-09-09_23-49-32 (5).mp4" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495250.jpg" },
-        { type: "video", src: "./assets/novas mídias/video_2026-06-19_17-08-24 (57).mp4" }
-      ]
-    },
-    {
-      enabled: true,
-      afterMessageIndex: 2,
-      gapMs: 1900,
-      author: "ADM 👑",
-      text: "Fechando por aqui, mais à noite 🔥",
-      title: "ONLYPRIME VIP",
-      footer: "Atualização +29 mídias",
-      views: "187",
-      reactions: ["🔥 9", "👀 4"],
-      items: [
-        { type: "photo", src: "./assets/novas mídias/5031048902001495251.jpg" },
-        { type: "video", src: "./assets/novas mídias/video_2026-06-19_17-08-24 (60).mp4" },
-        { type: "photo", src: "./assets/novas mídias/5031048902001495252.jpg" }
+        { type: "photo", src: "./assets/novas-midias/martina-oliveira/5031048902001495239.jpg", locked: false },
+        { type: "video", src: "./assets/novas-midias/martina-oliveira/video-2025-09-09-23-49-32-3.mp4", locked: false, blurred: true },
+        { type: "photo", src: "./assets/novas-midias/martina-oliveira/5031048902001495240.jpg", locked: true },
+        { type: "photo", src: "./assets/novas-midias/martina-oliveira/5031048902001495241.jpg", locked: false }
       ]
     }
   ],
@@ -138,7 +86,7 @@ const CONFIG = {
   medias: [
     {
       type: "visible-photo",
-      src: "./assets/foto-normal.jpg",
+      src: "./assets/novas-midias/martina-oliveira/5031048902001495236.jpg",
       fallbackSrc: "./assets/placeholder-photo.svg",
       label: "FOTO",
       size: "",
@@ -147,26 +95,26 @@ const CONFIG = {
     },
     {
       type: "download-photo",
-      src: "./assets/foto-download.jpg",
+      src: "./assets/novas-midias/martina-oliveira/5031048902001495237.jpg",
       fallbackSrc: "./assets/placeholder-blur.svg",
       label: "FOTO",
-      size: "4.8 MB",
+      size: "",
       time: "",
-      download: "./assets/foto-download.jpg"
+      download: "./assets/novas-midias/martina-oliveira/5031048902001495237.jpg"
     },
     {
-      type: "download-video",
+      type: "playable-video",
       src: "./assets/video-10s.mp4",
       poster: "",
       fallbackPoster: "./assets/placeholder-blur.svg",
-      label: "VÍDEO",
-      size: "5.6 MB",
-      time: "0:10",
-      download: "./assets/video-10s.mp4"
+      label: "VÍDEO PRINCIPAL",
+      size: "",
+      time: "",
+      download: ""
     },
     {
       type: "blurred-photo",
-      src: "./assets/thumb-video-bloqueado.jpg",
+      src: "./assets/novas-midias/martina-oliveira/5031048902001495238.jpg",
       fallbackSrc: "./assets/placeholder-blur.svg",
       label: "",
       size: "",
@@ -393,7 +341,9 @@ function createPlayableVideo(media) {
 
 function createAlbumTile(item) {
   const tile = document.createElement("div");
-  tile.className = "album-tile";
+  const locked = item.locked !== false;
+  const blurredPreview = !locked && item.blurred === true;
+  tile.className = ["album-tile", locked ? "" : "unlocked", blurredPreview ? "blurred-preview" : ""].filter(Boolean).join(" ");
 
   if (item.type === "video") {
     const video = document.createElement("video");
@@ -414,9 +364,21 @@ function createAlbumTile(item) {
     video.appendChild(source);
 
     tile.appendChild(video);
-    tile.insertAdjacentHTML("beforeend", `<span class="album-tile-play">▶</span>`);
+
+    if (locked) {
+      tile.insertAdjacentHTML("beforeend", `<span class="album-tile-lock">🔒</span>`);
+    } else {
+      tile.insertAdjacentHTML("beforeend", `<span class="album-tile-play">▶</span>`);
+      tile.addEventListener("click", () => openVideo(item.src, ""));
+    }
   } else {
     tile.appendChild(createImage(item.src, "./assets/placeholder-blur.svg", "mídia"));
+
+    if (locked) {
+      tile.insertAdjacentHTML("beforeend", `<span class="album-tile-lock">🔒</span>`);
+    } else {
+      tile.addEventListener("click", () => openImage(item.src, "./assets/placeholder-blur.svg"));
+    }
   }
 
   return tile;
@@ -462,6 +424,11 @@ function createAlbumGrid(album) {
   grid.dataset.count = String(album.items.length);
 
   album.items.forEach((item) => grid.appendChild(createAlbumTile(item)));
+
+  if (album.moreCount) {
+    grid.lastElementChild.insertAdjacentHTML("beforeend", `<span class="album-tile-more">+${album.moreCount}</span>`);
+  }
+
   card.appendChild(grid);
 
   const footer = document.createElement("div");

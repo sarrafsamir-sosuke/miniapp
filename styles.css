@@ -342,8 +342,18 @@ body.dark .msg-author { color: #65bfff; }
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.album-tile:not(.unlocked) img,
+.album-tile:not(.unlocked) video,
+.album-tile.blurred-preview img,
+.album-tile.blurred-preview video {
   filter: blur(4px);
   transform: scale(1.025);
+}
+
+.album-tile.unlocked {
+  cursor: pointer;
 }
 
 .album-tile-play {
@@ -358,6 +368,33 @@ body.dark .msg-author { color: #65bfff; }
   display: grid;
   place-items: center;
   font-size: 11px;
+  pointer-events: none;
+}
+
+.album-tile-lock {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(0,0,0,.45);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.album-tile-more {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.62);
+  color: white;
+  font-weight: 900;
+  font-size: 19px;
+  display: grid;
+  place-items: center;
   pointer-events: none;
 }
 
