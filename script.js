@@ -12,37 +12,128 @@ const CONFIG = {
   members: "67.483",
   online: "2.014",
 
-  postCaption: "Conteúdos atualizados diariamente. As mídias completas ficam disponíveis dentro do grupo.",
+  postCaption: "ATUALIZAÇÃO DE HOJE +830 MÍDIAS ENVIADAS HOJE",
   postReactions: ["🔥 8", "👀 2"],
 
   initialTheme: "light",
 
   adminUpdate: {
     enabled: true,
-    delayMs: 6500,
+    afterMessageIndex: 0,
+    gapMs: 1400,
     author: "ADM 👑",
     text: "Hoje tem atualização no grupo: +237 mídias serão enviadas hoje.",
     reactions: ["🔥 12", "👀 6"]
   },
 
-  adminAlbum: {
-    enabled: true,
-    delayMs: 1700,
-    author: "ADM 👑",
-    text: "Mais 6 mídias enviadas agora.",
-    title: "ONLYPRIME VIP",
-    footer: "Atualização",
-    views: "392",
-    reactions: ["🔥 18", "👀 9"],
-    images: [
-      "./assets/photo_4981285353620704201_y.jpg",
-      "./assets/photo_4981285353620704202_y.jpg",
-      "./assets/photo_4981285353620704203_y.jpg",
-      "./assets/photo_4981285353620704204_y.jpg",
-      "./assets/photo_4981285353620704205_x.jpg",
-      "./assets/photo_4981285353620704206_y.jpg"
-    ]
-  },
+  adminAlbums: [
+    {
+      enabled: true,
+      afterMessageIndex: 1,
+      gapMs: 1700,
+      author: "ADM 👑",
+      text: "Mais 6 mídias enviadas agora.",
+      title: "ONLYPRIME VIP",
+      footer: "Atualização +60 mídias",
+      views: "392",
+      reactions: ["🔥 18", "👀 9"],
+      items: [
+        { type: "photo", src: "./assets/novas mídias/5031048902001495236.jpg" },
+        { type: "video", src: "./assets/novas mídias/IMG_2629.MP4" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495237.jpg" },
+        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_36.mp4" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495238.jpg" },
+        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_37.mp4" }
+      ]
+    },
+    {
+      enabled: true,
+      afterMessageIndex: 2,
+      gapMs: 1500,
+      author: "ADM 👑",
+      text: "Acabou de cair mais conteúdo 🔥",
+      title: "ONLYPRIME VIP",
+      footer: "Atualização +45 mídias",
+      views: "301",
+      reactions: ["🔥 14", "👀 7"],
+      items: [
+        { type: "photo", src: "./assets/novas mídias/5031048902001495239.jpg" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495240.jpg" },
+        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_46.mp4" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495241.jpg" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495243.jpg" }
+      ]
+    },
+    {
+      enabled: true,
+      afterMessageIndex: 2,
+      gapMs: 1800,
+      author: "ADM 👑",
+      text: "Mais mídias liberadas no grupo.",
+      title: "ONLYPRIME VIP",
+      footer: "Atualização +52 mídias",
+      views: "275",
+      reactions: ["🔥 16", "👀 8"],
+      items: [
+        { type: "photo", src: "./assets/novas mídias/5031048902001495244.jpg" },
+        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_53.mp4" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495245.jpg" },
+        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_55.mp4" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495246.jpg" },
+        { type: "video", src: "./assets/novas mídias/Privacy BrunaVip_59.mp4" }
+      ]
+    },
+    {
+      enabled: true,
+      afterMessageIndex: 2,
+      gapMs: 2000,
+      author: "ADM 👑",
+      text: "Chegou mais um pacote agora.",
+      title: "ONLYPRIME VIP",
+      footer: "Atualização +38 mídias",
+      views: "248",
+      reactions: ["🔥 11", "👀 5"],
+      items: [
+        { type: "photo", src: "./assets/novas mídias/5031048902001495247.jpg" },
+        { type: "video", src: "./assets/novas mídias/video_2025-09-09_23-49-32 (3).mp4" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495248.jpg" },
+        { type: "video", src: "./assets/novas mídias/video_2025-09-09_23-49-32 (4).mp4" }
+      ]
+    },
+    {
+      enabled: true,
+      afterMessageIndex: 2,
+      gapMs: 1600,
+      author: "ADM 👑",
+      text: "Mais um envio do ADM 👑",
+      title: "ONLYPRIME VIP",
+      footer: "Atualização +41 mídias",
+      views: "219",
+      reactions: ["🔥 13", "👀 6"],
+      items: [
+        { type: "photo", src: "./assets/novas mídias/5031048902001495249.jpg" },
+        { type: "video", src: "./assets/novas mídias/video_2025-09-09_23-49-32 (5).mp4" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495250.jpg" },
+        { type: "video", src: "./assets/novas mídias/video_2026-06-19_17-08-24 (57).mp4" }
+      ]
+    },
+    {
+      enabled: true,
+      afterMessageIndex: 2,
+      gapMs: 1900,
+      author: "ADM 👑",
+      text: "Fechando por aqui, mais à noite 🔥",
+      title: "ONLYPRIME VIP",
+      footer: "Atualização +29 mídias",
+      views: "187",
+      reactions: ["🔥 9", "👀 4"],
+      items: [
+        { type: "photo", src: "./assets/novas mídias/5031048902001495251.jpg" },
+        { type: "video", src: "./assets/novas mídias/video_2026-06-19_17-08-24 (60).mp4" },
+        { type: "photo", src: "./assets/novas mídias/5031048902001495252.jpg" }
+      ]
+    }
+  ],
 
   medias: [
     {
@@ -87,14 +178,16 @@ const CONFIG = {
   typingNames: ["Maikon D.", "Gabriel R.", "André L.", "Rogério L.", "Pedro A."],
 
   messages: [
-    { author: "João P.", text: "mano esse de hoje... sem palavras", reactions: ["🔥 1"] },
     { author: "Lucas K.", text: "esse grupo é absurdo 🔥", reactions: ["🔥 3", "👀 2"] },
-    { author: "Pedro L.", text: "isso aqui tá muito bom kkkkk", reactions: ["😂 5"] },
-    { author: "Maikon D.", text: "ADM posta mais uma mídia aí", reactions: ["👀 4"] },
-    { author: "Carlos R.", text: "entrei ontem e valeu muito", reactions: ["🔥 2"] }
+    { author: "Carlos R.", text: "Ainda bem que encontrei esse grupo, não aguentava mais ficar procurando pelos conteúdos 🔥", reactions: ["🔥 2"] }
   ],
 
-  messageDelayMs: 1350
+  messageDelay: {
+    baseMs: 900,
+    incrementMs: 350,
+    maxMs: 3200,
+    jitterMs: 600
+  }
 };
 
 const tg = window.Telegram?.WebApp;
@@ -117,6 +210,7 @@ const messagesEl = document.getElementById("messages");
 const chat = document.getElementById("chat");
 const typingLine = document.getElementById("typingLine");
 const typingName = document.getElementById("typingName");
+const typingVerb = document.getElementById("typingVerb");
 const imageModal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
 const modalVideo = document.getElementById("modalVideo");
@@ -126,7 +220,7 @@ const themeToggle = document.getElementById("themeToggle");
 
 let messageIndex = 0;
 let updateWasShown = false;
-let albumWasShown = false;
+const albumShownFlags = CONFIG.adminAlbums.map(() => false);
 let shouldStickToBottom = true;
 let touchStartY = 0;
 let onlineNumber = parseInt(String(CONFIG.online).replace(/\D/g, ""), 10) || 2014;
@@ -136,7 +230,7 @@ function applyConfig() {
   miniTitle.textContent = CONFIG.miniAppTitle;
   groupName.textContent = CONFIG.groupName;
   adminName.textContent = CONFIG.adminName;
-  groupAvatar.src = CONFIG.avatarUrl;
+  groupAvatar.src = encodePath(CONFIG.avatarUrl);
   memberCount.textContent = CONFIG.members;
   onlineCount.textContent = CONFIG.online;
   postCaption.textContent = CONFIG.postCaption;
@@ -159,6 +253,10 @@ function applyTheme(theme) {
 
 function toggleTheme() {
   applyTheme(document.body.classList.contains("dark") ? "light" : "dark");
+}
+
+function encodePath(path) {
+  return path ? encodeURI(path) : path;
 }
 
 function renderMedias() {
@@ -218,7 +316,7 @@ function renderMedias() {
     if (media.type === "download-photo" || media.type === "download-video") {
       const link = document.createElement("a");
       link.className = "media-center-btn";
-      link.href = media.download || media.src;
+      link.href = encodePath(media.download || media.src);
       link.download = "";
       link.textContent = "↓";
       link.setAttribute("aria-label", media.type === "download-video" ? "Baixar vídeo" : "Baixar foto");
@@ -231,7 +329,7 @@ function renderMedias() {
 
 function createImage(src, fallbackSrc, alt) {
   const image = document.createElement("img");
-  image.src = src || fallbackSrc || "./assets/placeholder-blur.svg";
+  image.src = encodePath(src) || fallbackSrc || "./assets/placeholder-blur.svg";
   image.alt = alt;
 
   if (fallbackSrc) {
@@ -249,7 +347,7 @@ function createVideoPreview(media) {
   video.muted = true;
   video.playsInline = true;
   video.preload = "metadata";
-  video.poster = media.poster || "";
+  video.poster = encodePath(media.poster) || "";
   video.setAttribute("aria-label", media.label || "mídia");
 
   video.addEventListener("loadedmetadata", () => {
@@ -265,7 +363,7 @@ function createVideoPreview(media) {
   });
 
   const source = document.createElement("source");
-  source.src = media.src;
+  source.src = encodePath(media.src);
   source.type = "video/mp4";
   video.appendChild(source);
 
@@ -277,20 +375,51 @@ function createPlayableVideo(media) {
   video.controls = true;
   video.playsInline = true;
   video.preload = "metadata";
-  video.poster = media.poster || media.fallbackPoster || "";
+  video.poster = encodePath(media.poster || media.fallbackPoster) || "";
 
   if (media.fallbackPoster) {
     video.addEventListener("error", () => {
-      if (!video.poster.includes(media.fallbackPoster)) video.poster = media.fallbackPoster;
+      if (!video.poster.includes(media.fallbackPoster)) video.poster = encodePath(media.fallbackPoster);
     });
   }
 
   const source = document.createElement("source");
-  source.src = media.src;
+  source.src = encodePath(media.src);
   source.type = "video/mp4";
   video.appendChild(source);
 
   return video;
+}
+
+function createAlbumTile(item) {
+  const tile = document.createElement("div");
+  tile.className = "album-tile";
+
+  if (item.type === "video") {
+    const video = document.createElement("video");
+    video.muted = true;
+    video.playsInline = true;
+    video.preload = "metadata";
+    video.setAttribute("aria-label", "mídia");
+
+    video.addEventListener("loadedmetadata", () => {
+      if (Number.isFinite(video.duration) && video.duration > 0) {
+        video.currentTime = Math.min(0.2, video.duration / 2);
+      }
+    });
+
+    const source = document.createElement("source");
+    source.src = encodePath(item.src);
+    source.type = "video/mp4";
+    video.appendChild(source);
+
+    tile.appendChild(video);
+    tile.insertAdjacentHTML("beforeend", `<span class="album-tile-play">▶</span>`);
+  } else {
+    tile.appendChild(createImage(item.src, "./assets/placeholder-blur.svg", "mídia"));
+  }
+
+  return tile;
 }
 
 function createMessage(item, extraClass = "") {
@@ -316,100 +445,135 @@ function createMessage(item, extraClass = "") {
   maybeScrollToBottom();
 }
 
-function createAdminAlbum() {
-  if (!CONFIG.adminAlbum?.enabled || albumWasShown) return;
-  albumWasShown = true;
-
+function createAlbumGrid(album) {
   const article = document.createElement("article");
   article.className = "message admin-message album-message";
 
-  const album = document.createElement("div");
-  album.className = "album-card";
+  const card = document.createElement("div");
+  card.className = "album-card";
 
   const title = document.createElement("div");
   title.className = "album-title";
-  title.textContent = CONFIG.adminAlbum.title;
-  album.appendChild(title);
+  title.textContent = album.title;
+  card.appendChild(title);
 
   const grid = document.createElement("div");
   grid.className = "album-grid";
+  grid.dataset.count = String(album.items.length);
 
-  CONFIG.adminAlbum.images.forEach((src) => {
-    const tile = document.createElement("div");
-    tile.className = "album-tile";
-    tile.appendChild(createImage(src, "./assets/placeholder-blur.svg", "mídia"));
-    grid.appendChild(tile);
-  });
-
-  album.appendChild(grid);
+  album.items.forEach((item) => grid.appendChild(createAlbumTile(item)));
+  card.appendChild(grid);
 
   const footer = document.createElement("div");
   footer.className = "album-footer";
   footer.innerHTML = `
-    <span>${CONFIG.adminAlbum.footer}</span>
-    <span>👁 ${CONFIG.adminAlbum.views} ${nowTime()}</span>
+    <span>${album.footer}</span>
+    <span>👁 ${album.views} ${nowTime()}</span>
   `;
-  album.appendChild(footer);
+  card.appendChild(footer);
 
-  const reactions = (CONFIG.adminAlbum.reactions || [])
+  const reactions = (album.reactions || [])
     .map(reaction => `<span>${reaction}</span>`)
     .join("");
 
   article.innerHTML = `
-    <span class="msg-author">${CONFIG.adminAlbum.author}</span>
-    <div class="msg-text">${CONFIG.adminAlbum.text}</div>
+    <span class="msg-author">${album.author}</span>
+    <div class="msg-text">${album.text}</div>
   `;
-  article.appendChild(album);
+  article.appendChild(card);
   if (reactions) article.insertAdjacentHTML("beforeend", `<div class="msg-reactions">${reactions}</div>`);
   article.insertAdjacentHTML("beforeend", `<div class="msg-meta">${nowTime()}</div>`);
 
   messagesEl.appendChild(article);
-  updateOnlineCounter();
   maybeScrollToBottom();
 }
 
-function scheduleFinalAdminAlbum() {
-  if (!CONFIG.adminAlbum?.enabled || albumWasShown) return;
-  setTimeout(createAdminAlbum, CONFIG.adminAlbum.delayMs);
+function getEventsAt(checkpoint) {
+  const events = [];
+
+  if (CONFIG.adminUpdate?.enabled && !updateWasShown && CONFIG.adminUpdate.afterMessageIndex === checkpoint) {
+    events.push({ kind: "adminText" });
+  }
+
+  CONFIG.adminAlbums.forEach((album, i) => {
+    if (album.enabled && !albumShownFlags[i] && album.afterMessageIndex === checkpoint) {
+      events.push({ kind: "grid", album, i });
+    }
+  });
+
+  return events;
 }
 
-function scheduleAdminUpdate() {
-  if (!CONFIG.adminUpdate?.enabled) return;
+function processEvents(events, done) {
+  if (!events.length) {
+    done();
+    return;
+  }
+
+  const [event, ...rest] = events;
+  const baseGap = event.kind === "adminText" ? CONFIG.adminUpdate.gapMs : event.album.gapMs;
+  const gap = (baseGap ?? 1200) + Math.random() * 500;
+  const author = event.kind === "adminText" ? CONFIG.adminUpdate.author : event.album.author;
+
+  showTyping(author, event.kind === "grid" ? "está enviando mídia..." : "está digitando...");
 
   setTimeout(() => {
-    if (updateWasShown) return;
-    updateWasShown = true;
+    hideTyping();
 
-    createMessage({
-      author: CONFIG.adminUpdate.author,
-      text: CONFIG.adminUpdate.text,
-      reactions: CONFIG.adminUpdate.reactions
-    }, "update-admin");
+    if (event.kind === "adminText") {
+      updateWasShown = true;
+      createMessage({
+        author: CONFIG.adminUpdate.author,
+        text: CONFIG.adminUpdate.text,
+        reactions: CONFIG.adminUpdate.reactions
+      }, "update-admin");
+    } else {
+      albumShownFlags[event.i] = true;
+      createAlbumGrid(event.album);
+    }
 
     updateOnlineCounter();
-  }, CONFIG.adminUpdate.delayMs);
+    setTimeout(() => processEvents(rest, done), 400);
+  }, gap);
 }
 
 function loopMessages() {
   if (messageIndex >= CONFIG.messages.length) {
     hideTyping();
-    scheduleFinalAdminAlbum();
+    processEvents(getEventsAt(CONFIG.messages.length), () => {});
     return;
   }
 
+  const item = CONFIG.messages[messageIndex];
   showTyping();
 
   setTimeout(() => {
     hideTyping();
-    createMessage(CONFIG.messages[messageIndex]);
+    createMessage(item);
+    const currentIndex = messageIndex;
     messageIndex += 1;
     updateOnlineCounter();
-    setTimeout(loopMessages, CONFIG.messageDelayMs);
-  }, 850 + Math.random() * 500);
+
+    processEvents(getEventsAt(currentIndex), () => {
+      setTimeout(loopMessages, getMessageDelay(currentIndex));
+    });
+  }, getTypingDuration(item.text));
 }
 
-function showTyping() {
-  typingName.textContent = randomItem(CONFIG.typingNames);
+function getMessageDelay(index) {
+  const cfg = CONFIG.messageDelay;
+  const base = Math.min(cfg.baseMs + index * cfg.incrementMs, cfg.maxMs);
+  return base + Math.random() * cfg.jitterMs;
+}
+
+function getTypingDuration(text) {
+  const length = (text || "").length;
+  return Math.min(550 + length * 16, 2600) + Math.random() * 400;
+}
+
+function showTyping(name, verb) {
+  typingName.textContent = name || randomItem(CONFIG.typingNames);
+  typingVerb.textContent = verb || "está digitando...";
   typingLine.classList.remove("hidden");
   maybeScrollToBottom();
 }
@@ -419,7 +583,8 @@ function hideTyping() {
 }
 
 function updateOnlineCounter() {
-  onlineNumber += Math.random() > 0.5 ? 1 : -1;
+  const delta = Math.floor(Math.random() * 7) - 2;
+  onlineNumber += delta;
   onlineNumber = Math.max(900, onlineNumber);
   onlineCount.textContent = onlineNumber.toLocaleString("pt-BR");
 }
@@ -429,7 +594,7 @@ function openImage(src, fallbackSrc) {
   modalVideo.removeAttribute("src");
   modalVideo.classList.add("hidden");
   modalImage.classList.remove("hidden");
-  modalImage.src = src || fallbackSrc || "";
+  modalImage.src = encodePath(src) || fallbackSrc || "";
   modalImage.onerror = () => {
     if (fallbackSrc && !modalImage.src.includes(fallbackSrc)) modalImage.src = fallbackSrc;
   };
@@ -440,8 +605,8 @@ function openVideo(src, poster) {
   modalImage.src = "";
   modalImage.classList.add("hidden");
   modalVideo.classList.remove("hidden");
-  modalVideo.poster = poster || "";
-  modalVideo.src = src;
+  modalVideo.poster = encodePath(poster) || "";
+  modalVideo.src = encodePath(src);
   modalVideo.load();
   imageModal.classList.remove("hidden");
 }
@@ -518,4 +683,3 @@ chat.addEventListener("touchmove", handleTouchMove, { passive: true });
 
 applyConfig();
 setTimeout(loopMessages, 700);
-scheduleAdminUpdate();
